@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+  
+            <div class="layout">
+                <div class="left-col">
+                    <!-- <div class="content"> -->
+                        <h1>
+                            Learn to code by watching others
+                        </h1>
+                        <p>
+                            See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.
+                        </p>
+                    <!-- </div> -->
+                </div>
+
+                <div class="right-col">
+                    <div class="try">
+                        <!-- <p class="try"> -->
+                        <p>
+                            <strong>
+                                Try it free for 7 days
+                            </strong>
+                            then $20/mo. thereafter
+                        </p>
+                    </div>
+                    <!-- <div class="form-section"> -->
+                    <form class="content" action="" method="post">
+                        <!-- firstname input -->
+                        <div class="space">                            
+                            <label for="firstname">
+                                <!-- first name cannot be empty  -->
+                                <input type="text" name="firstname" id="fname" placeholder="First Name" maxlength="15" minlength="3" required>
+                                <small>First Name cannot be empty</small>
+                            </label>                       
+                        </div>
+        
+                        <!-- lastname input -->
+                        <div class="space">
+                            <!-- <label for="surname"> -->
+                                <input type="text" name="surname" id="sname" placeholder="Last Name" maxlength="15" minlength="3" required>
+                                <small>Last Name cannot be empty</small>
+                            <!-- </label> -->
+                        </div>
+
+                        <!-- email input -->
+                        <div class="space">
+                            <label for="email">
+                                <input type="text" name="email" id="email" placeholder="Email Address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" title="Enter a valid email" required>
+                                <small>Looks like this is not an email</small>
+                            </label>
+                        </div>
+        
+                        <!-- password input -->
+                        <div class="space">
+                                <input type="password" name="password" id="pwrd" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters" required>
+                                <small>Password cannot be empty</small>
+                            </label>
+                        </div>
+
+                        <div class="confirm">
+                            <!-- trial button -->
+                            <button class="btn" type="submit">
+                                CLAIM YOUR FREE TRIAL
+                            </button>
+                            <!-- terms and conditions acceptance -->
+                            <p class="t-c">
+                                <small>
+                                    By clicking the button, you are agreeing to our
+                                    <strong>
+                                        Terms and Services
+                                    </strong>
+                                </small>
+                            </p>
+                        </div>
+                    </form>
+                    <!-- </div> -->
+                </div>  
+            </div>
+        </div>
+    </main>
+</body>
+</html>

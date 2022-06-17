@@ -4,28 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Registration Form</title>
 </head>
 <body>
     <main>
         <div class="container">
-  
+
+            <!-- class to split the div into two equal columns -->
             <div class="layout">
+
+                <!-- left column -->
                 <div class="left-col">
-                    <!-- <div class="content"> -->
-                        <h1>
-                            Learn to code by watching others
-                        </h1>
-                        <p>
-                            See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.
-                        </p>
-                    <!-- </div> -->
+                    <h1>
+                        Learn to code by watching others
+                    </h1>
+                    <p>
+                        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.
+                    </p>
                 </div>
 
+                <!-- right column -->
                 <div class="right-col">
+
+                    <!-- try for free -->
                     <div class="try">
-                        <!-- <p class="try"> -->
                         <p>
                             <strong>
                                 Try it free for 7 days
@@ -33,60 +36,75 @@
                             then $20/mo. thereafter
                         </p>
                     </div>
-                    <!-- <div class="form-section"> -->
-                    <form class="content" action="" method="post">
-                        <!-- firstname input -->
-                        <div class="space">                            
-                            <label for="firstname">
-                                <!-- first name cannot be empty  -->
-                                <input type="text" name="firstname" id="fname" placeholder="First Name" maxlength="15" minlength="3" required>
-                                <small>First Name cannot be empty</small>
-                            </label>                       
-                        </div>
-        
-                        <!-- lastname input -->
+
+                    <!-- form section -->
+                    <form >
                         <div class="space">
-                            <!-- <label for="surname"> -->
-                                <input type="text" name="surname" id="sname" placeholder="Last Name" maxlength="15" minlength="3" required>
-                                <small>Last Name cannot be empty</small>
-                            <!-- </label> -->
+
+                            <!-- firstname input -->
+                            <input  type="text" name="firstName" id="fname" placeholder="First Name" maxlength="15" minlength="3">
+                            <label for="firstName">
+                                first name cannot be empty
+                            </label>
+                            <i class="error">
+                                <img src="images/icon-error.svg" alt="error icon">
+                            </i>
+                        </div>
+
+                        <div class="space">
+
+                            <!-- lastname input -->
+                            <input  type="text" name="lastName" id="sname" placeholder="Last Name" maxlength="15" minlength="3">
+                            <label for="lastName">
+                                last name cannot be empty
+                            </label>
+                            <i class="error">
+                                <img src="images/icon-error.svg" alt="error icon">
+                            </i>
                         </div>
 
                         <!-- email input -->
                         <div class="space">
+                            <input type="email" name="email" id="email" placeholder="Email Address">
                             <label for="email">
-                                <input type="text" name="email" id="email" placeholder="Email Address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" title="Enter a valid email" required>
-                                <small>Looks like this is not an email</small>
+                                Looks like this is not an email
                             </label>
-                        </div>
-        
-                        <!-- password input -->
-                        <div class="space">
-                                <input type="password" name="password" id="pwrd" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters" required>
-                                <small>Password cannot be empty</small>
-                            </label>
+                            <i class="error">
+                                <img src="images/icon-error.svg" alt="error icon">
+                            </i>
                         </div>
 
-                        <div class="confirm">
-                            <!-- trial button -->
-                            <button class="btn" type="submit">
-                                CLAIM YOUR FREE TRIAL
-                            </button>
-                            <!-- terms and conditions acceptance -->
-                            <p class="t-c">
-                                <small>
-                                    By clicking the button, you are agreeing to our
-                                    <strong>
-                                        Terms and Services
-                                    </strong>
-                                </small>
-                            </p>
+                        <div class="space">
+
+                            <!-- password input -->
+                            <input type="password" name="password" id="pswd" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters">
+                            <label for="password">
+                                Password cannot be empty
+                            </label>
+                            <i class="error">
+                                <img src="images/icon-error.svg" alt="error icon">
+                            </i>
                         </div>
+
+                        <div class="space">
+                            <button class="btn" type="submit">
+                                Claim your free trial
+                            </button>
+                        </div>
+
+                        <p class="t-c">
+                            By clicking the button, you are agreeing to our
+                            <a href="#"> 
+                                <strong>
+                                    Terms and Services
+                                </strong>
+                            </a>.
+                        </p>
                     </form>
-                    <!-- </div> -->
                 </div>  
             </div>
         </div>
+        <script src="js/script.js"></script>
     </main>
 </body>
 </html>

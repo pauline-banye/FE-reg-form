@@ -250,10 +250,10 @@ input:not(:placeholder-shown):focus:invalid {
     border-color: var(--red);
 }
 
-input:not(:placeholder-shown):invalid ~ label,
-input:not(:placeholder-shown):focus:invalid ~ label,
-input:not(:placeholder-shown):focus:invalid ~ .error,
-input:not(:placeholder-shown):invalid ~ .error {
+label input:not(:placeholder-shown):invalid,
+label input:not(:placeholder-shown):focus:invalid,
+.alert input:not(:placeholder-shown):focus:invalid,
+.alert input:not(:placeholder-shown):invalid{
     display:block;
 }
 
@@ -278,15 +278,7 @@ input:not(:placeholder-shown):invalid ~ .error {
     margin-bottom: 18px;
 }
 
-.danger{
-    border-color: var(--red);
-}
-
-.successful{
-    border-color:var(--green);
-}
-
-.error:not(.btn){
+.alert:not(.btn){
     display:none;
     position:absolute;
     right:0;

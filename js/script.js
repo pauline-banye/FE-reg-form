@@ -47,12 +47,12 @@ const form = document.querySelector('form');
                 entry.nextElementSibling.style.display = 'block';
                 entry.nextElementSibling.nextElementSibling.style.display = 'block';
             }
-            
+
             else if(entry.type == 'email'){
                 entry.innerHTML = entry.value;
-                emailRegex = /^(A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63})$/
+                regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
                 
-                if(!emailRegex.test(entry.value)){
+                if(!regex.test(entry.value)){
 
                     entry.parentNode.classList.add('invalid-input');
                     entry.classList.add('declined');

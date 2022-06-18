@@ -54,20 +54,22 @@ main {
         background-color: var(--red);
         background-position: center center;
         background-attachment: fixed;
-        min-height: 100vh;
+        min-height: 100%;
     }
 
     .container {
         width: 100%;
-        padding: 10px;
-        max-height: 100vh;
+        padding: 0;
+        max-height: 100%;
+        margin: 0;
     }
 
     .left-col,
     .left-col p {
         width: 100%;
-        padding: 10px;
-        max-height: 100vh;
+        padding: 0;
+        margin: 0;
+        max-height: 100%;
         text-align: center;
         align-items: center;
         justify-content: center;
@@ -75,21 +77,25 @@ main {
 
     .right-col {
         width: 100%;
-        padding: 10px;
-        max-height: 100vh;
+        padding: 0;
+        margin: 0;
+        max-height: 100%;
     }
 
     .try {
         margin-top: 20px;
+        padding: 0;
+        margin: 0;
     }
 }
 
 /* adjust for screens wider than 375px */
 @media only screen and (min-width: 375px) {
     .layout {
-        width: 80%;
+        width: 100%;
         margin: auto;
         display: flex;
+        height: 100vh;
     }
 }
 
@@ -99,7 +105,7 @@ main {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    max-height: 100%;
     margin: 0 auto;
     width: 80%;
 }
